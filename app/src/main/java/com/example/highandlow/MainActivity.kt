@@ -11,7 +11,7 @@ class MainActivity : AppCompatActivity() {
     private val tag = "high and low"
     private var yourCard = 0
     private var droidCard = 0
-    private var hitCount = 0
+    private var hitCount = 1
     private var loseCount = 0
     private var gameStart = false
     private var answerd = false
@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        hitCount = 1
+        hitCount = 0
         loseCount = 0
         hit_Text.text = getString(R.string.hittext)
         lose_Text.text = getString(R.string.losetext)
