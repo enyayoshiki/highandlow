@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        hitCount = 0
+        hitCount = 1
         loseCount = 0
         hit_Text.text = getString(R.string.hittext)
         lose_Text.text = getString(R.string.losetext)
